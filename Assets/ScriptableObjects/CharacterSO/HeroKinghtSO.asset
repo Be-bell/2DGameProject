@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc99a671dbeed584b9303dd569c3532e, type: 3}
+  m_Name: HeroKinghtSO
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 4723107735738678597, guid: 7aa872f33d33c85479281ca36db07afe, type: 3}
+  controller: {fileID: 9100000, guid: 3b88adb35734edc4fb83996f9d193f04, type: 2}
+  speed: 7
+  MaxHealth: 30
