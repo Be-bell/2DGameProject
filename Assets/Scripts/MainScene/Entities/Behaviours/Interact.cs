@@ -11,6 +11,7 @@ public class Interact : MonoBehaviour
     private bool isInteract = false;
     private bool isCoroutineOn = false;
     [SerializeField] private GameObject dialogPanel;
+    [SerializeField] private GameObject PressE;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class Interact : MonoBehaviour
     {
         if (collision.transform.tag == tagNPC)
         {
+            PressE.SetActive(true);
             isInteract = true;
         }
     }
@@ -58,7 +60,9 @@ public class Interact : MonoBehaviour
     {
         if(collision.transform.tag == tagNPC)
         {
+            PressE.SetActive(false);
             isInteract = false;
+            EndDialog();
         }
     }
 
@@ -67,4 +71,10 @@ public class Interact : MonoBehaviour
         dialogPanel.SetActive(true);
         return true;
     }
+
+    public void EndDialog()
+    {
+        dialogPanel.SetActive(false);
+    }
+
 }

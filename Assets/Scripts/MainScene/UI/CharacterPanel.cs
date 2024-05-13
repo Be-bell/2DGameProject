@@ -19,12 +19,14 @@ public class CharacterPanel : MonoBehaviour
     {
         dataManager.characterSO = Instantiate(character1);
         gameObject.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void SetCharacter2()
     {
         dataManager.characterSO = Instantiate(character2);
         gameObject.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void Cancel()
